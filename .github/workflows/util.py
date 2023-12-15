@@ -13,7 +13,7 @@ def multi_accounts_task(fn):
         pass
 
     if len(configs) == 0:
-        print('没有找到配置文件, 请执行应用注册 Action.')
+        print('没有找到配置文件,     请执行应用注册 Action.')
         exit(1)
 
     futures, pool = [], ThreadPoolExecutor(len(configs))
