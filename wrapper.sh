@@ -90,9 +90,9 @@ sync() {
     $git rm -rf --cached .
     $git add -A
     $git commit -m "$message"
-    # $git branch -D master
-    # $git branch -m master
-    $git push -f origin test
+    $git branch -D master
+    $git branch -m master
+    $git push -f origin master
 }
 
 case $1 in
