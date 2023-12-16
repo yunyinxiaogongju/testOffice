@@ -91,8 +91,8 @@ sync() {
     $git rm -rf --cached .
     $git add -A
     $git commit -m "$message"
-    $git branch -D master_push
-    $git branch -m master_push
+    # $git branch -D master_push
+    # $git branch -m master_push
     $git push -f origin master_push
 }
 
