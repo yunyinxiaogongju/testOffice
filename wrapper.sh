@@ -92,7 +92,7 @@ sync() {
     $git commit -m "$message"
     # $git branch -D master
     # $git branch -m master
-    $git push -f origin master
+    $git push -f origin master_push
 }
 
 case $1 in
