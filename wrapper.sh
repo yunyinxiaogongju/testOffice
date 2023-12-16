@@ -86,12 +86,13 @@ sync() {
         exit 0
     }
 
-    $git checkout --orphan latest_branch
+    # $git checkout --orphan latest_branch
+    $git checkout -b master_push
     $git rm -rf --cached .
     $git add -A
     $git commit -m "$message"
-    # $git branch -D master
-    # $git branch -m master
+    $git branch -D master_push
+    $git branch -m master_push
     $git push -f origin master_push
 }
 
